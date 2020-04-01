@@ -104,10 +104,10 @@ def contar_buracos(valor: str):
     '''
     buracos = 0
     #LOOP PARA PERCORRER A "string" E FAZER A CONTAGEM.
-    for i in range(len(valor)):
-        if valor[i] in "abdeopqADOPQR":
+    for letra in valor:
+        if letra in "abdeopqADOPQR":
             buracos += 1
-        elif valor[i] in "gB":
+        elif letra in "gB":
             buracos += 2
     return buracos
 
